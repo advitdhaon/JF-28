@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Campus Hub - Signup</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex min-h-screen flex-col items-center justify-center gap-6 p-6 md:p-10">
+
+  <div class="flex w-full max-w-sm flex-col gap-6">
+    <!-- Brand -->
+    <a href="index.html" class="flex items-center gap-2 self-center font-medium text-lg">
+      #campus-hub
+    </a>
+
+    <!-- Signup Card -->
+    <div class="bg-white shadow rounded-2xl p-6">
+      <div class="text-center mb-6">
+        <h1 class="text-xl font-semibold">Create Account</h1>
+        <p class="text-gray-500 text-sm">Fill in your details below</p>
+      </div>
+
+      <form id="signup-form" class="space-y-6">
+        <div class="space-y-4">
+          <!-- Name -->
+          <div class="grid gap-2">
+            <label for="name" class="text-sm font-medium">Name</label>
+            <input id="name" name="name" type="text" required
+              class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+          </div>
+
+          <!-- Email -->
+          <div class="grid gap-2">
+            <label for="email" class="text-sm font-medium">Email</label>
+            <input id="email" name="email" type="email" required
+              class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+          </div>
+
+          <!-- Username -->
+          <div class="grid gap-2">
+            <label for="username" class="text-sm font-medium">Username</label>
+            <input id="username" name="username" type="text" required
+              class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+          </div>
+
+          <!-- Password -->
+          <div class="grid gap-2">
+            <label for="password" class="text-sm font-medium">Password</label>
+            <input id="password" name="password" type="password" required
+              class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+          </div>
+
+          <!-- School ID -->
+          <div class="grid gap-2">
+            <label for="school_id" class="text-sm font-medium">School ID</label>
+            <input id="school_id" name="school_id" type="text" required
+              class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit"
+          class="w-full rounded-lg bg-blue-600 text-white py-2 font-medium transition hover:bg-blue-700">
+          Signup
+        </button>
+      </form>
+
+      <div class="mt-6 text-center text-sm text-gray-600">
+        Already have an account?
+        <a href="login.html" class="underline underline-offset-4 text-blue-600 hover:text-blue-800">
+          Login
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="signup.js"></script>
+</body>
+</html>
