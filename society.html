@@ -215,7 +215,7 @@
               <div class="group-avatar bg-blue-500 text-white mr-3">P12</div>
               <div>
                 <div class="text-sm font-medium text-white">Physics 12 - A</div>
-                <div class="text-xs text-gray-400">Prof. Johnson, 42 members</div>
+                <div class="text-xs text-gray-400">Mr. Alok,  42 members</div>
               </div>
             </div>
             
@@ -223,7 +223,7 @@
               <div class="group-avatar bg-green-500 text-white mr-3">M12</div>
               <div>
                 <div class="text-sm font-medium text-white">Math Club</div>
-                <div class="text-xs text-gray-400">Dr. Patel, 28 members</div>
+                <div class="text-xs text-gray-400">Mr. Rajan, 28 members</div>
               </div>
             </div>
             
@@ -239,7 +239,7 @@
               <div class="group-avatar bg-yellow-500 text-white mr-3">LIT</div>
               <div>
                 <div class="text-sm font-medium text-white">Literature Society</div>
-                <div class="text-xs text-gray-400">Ms. Williams, 19 members</div>
+                <div class="text-xs text-gray-400">Ms. Gupta, 19 members</div>
               </div>
             </div>
           </div>
@@ -288,7 +288,7 @@
         <div class="group-avatar bg-blue-500 text-white mr-3" id="groupAvatar">P12</div>
         <div>
           <div class="font-semibold text-white" id="groupName">Physics 12 - A</div>
-          <div class="text-xs text-gray-400" id="groupInfo">Prof. Johnson, 42 members</div>
+          <div class="text-xs text-gray-400" id="groupInfo">Mr. Alok, 42 members</div>
         </div>
       </div>
 
@@ -334,26 +334,26 @@
     const groups = {
       physics: {
         name: "Physics 12 - A",
-        info: "Prof. Johnson, 42 members",
+        info: "Mr. Alok , 42 members",
         avatar: "P12",
         color: "bg-blue-500",
         messages: [
-          { sender: "Prof. Johnson", text: "Good morning class! Don't forget your lab reports are due tomorrow.", time: "9:15 AM", type: "received" },
-          { sender: "Sarah M.", text: "Professor, will we have time to review before the test?", time: "9:22 AM", type: "received" },
-          { sender: "Prof. Johnson", text: "Yes, we'll dedicate the first 20 minutes to review questions.", time: "9:25 AM", type: "received" },
+          { sender: "Mr. Alok", text: "Good morning class! Don't forget your lab reports are due tomorrow.", time: "9:15 AM", type: "received" },
+          { sender: "Advit.", text: "Professor, will we have time to review before the test?", time: "9:22 AM", type: "received" },
+          { sender: "Mr. Alok", text: "Yes, we'll dedicate the first 20 minutes to review questions.", time: "9:25 AM", type: "received" },
           { sender: "You", text: "I've uploaded the study guide to the shared folder.", time: "9:30 AM", type: "sent" },
-          { sender: "Mike T.", text: "Thanks! That's really helpful.", time: "9:32 AM", type: "received" }
+          { sender: "Misbah.", text: "Thanks! That's really helpful.", time: "9:32 AM", type: "received" }
         ]
       },
       math: {
         name: "Math Club",
-        info: "Dr. Patel, 28 members",
+        info: "Mr. Rajan, 28 members",
         avatar: "M12",
         color: "bg-green-500",
         messages: [
-          { sender: "Dr. Patel", text: "Reminder: Math competition preparation session this Friday.", time: "10:15 AM", type: "received" },
+          { sender: "Mr. Rajan", text: "Reminder: Math competition preparation session this Friday.", time: "10:15 AM", type: "received" },
           { sender: "You", text: "I'll be there! Can someone share the problems from last week?", time: "10:22 AM", type: "sent" },
-          { sender: "Lisa R.", text: "I've posted them in the files section.", time: "10:25 AM", type: "received" }
+          { sender: "Advit.", text: "I've posted them in the files section.", time: "10:25 AM", type: "received" }
         ]
       },
       cs: {
@@ -364,7 +364,7 @@
         messages: [
           { sender: "Mr. Kumar", text: "The coding challenge deadline has been extended to next Monday.", time: "11:15 AM", type: "received" },
           { sender: "You", text: "Great news! I needed the extra time.", time: "11:22 AM", type: "sent" },
-          { sender: "Alex P.", text: "Anyone want to form a study group for the challenge?", time: "11:25 AM", type: "received" }
+          { sender: "Misbah", text: "Anyone want to form a study group for the challenge?", time: "11:25 AM", type: "received" }
         ]
       },
       literature: {
@@ -373,9 +373,9 @@
         avatar: "LIT",
         color: "bg-yellow-500",
         messages: [
-          { sender: "Ms. Williams", text: "For next week, please read chapters 5-7 of Brave New World.", time: "1:15 PM", type: "received" },
+          { sender: "Ms. Gupta", text: "For next week, please read chapters 5-7 of Brave New World.", time: "1:15 PM", type: "received" },
           { sender: "You", text: "I found some great analysis videos if anyone is interested.", time: "1:22 PM", type: "sent" },
-          { sender: "Tom B.", text: "Please share the links!", time: "1:25 PM", type: "received" }
+          { sender: "Advit.", text: "Please share the links!", time: "1:25 PM", type: "received" }
         ]
       }
     };
@@ -444,7 +444,7 @@
       typingEl.className = 'flex mb-4 justify-start';
       typingEl.innerHTML = `
         <div class="typing-indicator">
-          <span>Prof. Johnson is typing</span>
+          <span>Mr. Alok is typing</span>
           <div class="typing-dot"></div>
           <div class="typing-dot"></div>
           <div class="typing-dot"></div>
@@ -495,9 +495,9 @@
         const randomReply = replies[Math.floor(Math.random() * replies.length)];
         
         groups[currentGroup].messages.push({
-          sender: currentGroup === 'physics' ? 'Prof. Johnson' : 
-                 currentGroup === 'math' ? 'Dr. Patel' :
-                 currentGroup === 'cs' ? 'Mr. Kumar' : 'Ms. Williams',
+          sender: currentGroup === 'physics' ? 'Mr. Alok' : 
+                 currentGroup === 'math' ? 'Mr. Rajan' :
+                 currentGroup === 'cs' ? 'Mr. Kumar' : 'Ms. Gupta',
           text: randomReply,
           time: 'Just now',
           type: 'received'
